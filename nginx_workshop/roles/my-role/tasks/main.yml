@@ -1,0 +1,17 @@
+---
+- name: Copy a file to the remote host/ localhost for now
+  copy:
+    src: test.txt
+    dest: /tmp/test.txt
+
+- name: get current http stats
+  nginx_status_facts:
+    url: http://localhost/basic_status
+  register: result
+
+#Gather status facts from nginx on localhost with a custom timeout of 20 seconds
+- name: get current http stats
+  nginx_status_facts:
+    url: http://localhost/basic_status
+    timeout: 20
+  register: result

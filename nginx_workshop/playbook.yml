@@ -1,0 +1,6 @@
+---
+- hosts: my_hosts
+  roles:
+    - my-role
+  tasks:
+  - local_action: lineinfile line={{ result }} path=/home/kali/Desktop/ansible_workshop/nginx_workshop/backup.txt

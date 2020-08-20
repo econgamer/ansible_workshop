@@ -1,0 +1,1 @@
+{'failed': False, 'changed': False, 'ansible_facts': {'nginx_status_facts': {'handled': 114, 'accepts': 114, 'writing': 2, 'waiting': 0, 'active_connections': 2, 'requests': 206, 'reading': 0, 'data': 'Active connections: 2 \nserver accepts handled requests\n 114 114 206 \nReading: 0 Writing: 2 Waiting: 0 \n'}}}
